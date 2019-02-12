@@ -5,6 +5,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rails', '~> 5.2.2'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+gem 'devise'
+gem 'milia'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -61,3 +63,4 @@ group :production do
   gem 'pg', '~> 0.18.4'
   gem 'rails_12factor'
 end
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
